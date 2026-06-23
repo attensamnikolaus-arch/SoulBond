@@ -1,0 +1,127 @@
+{
+  "name": "PhysicalAdoptionApplication",
+  "type": "object",
+  "properties": {
+    "animal_id": {
+      "type": "string",
+      "title": "Animal ID"
+    },
+    "animal_name": {
+      "type": "string",
+      "title": "Animal Name"
+    },
+    "first_name": {
+      "type": "string",
+      "title": "First Name"
+    },
+    "last_name": {
+      "type": "string",
+      "title": "Last Name"
+    },
+    "email": {
+      "type": "string",
+      "title": "Email"
+    },
+    "phone": {
+      "type": "string",
+      "title": "Phone"
+    },
+    "street_address": {
+      "type": "string",
+      "title": "Street Address"
+    },
+    "city": {
+      "type": "string",
+      "title": "City"
+    },
+    "state": {
+      "type": "string",
+      "title": "State"
+    },
+    "zip": {
+      "type": "string",
+      "title": "Zip Code"
+    },
+    "housing_type": {
+      "type": "string",
+      "title": "Housing Type",
+      "enum": [
+        "house_with_yard",
+        "house_no_yard",
+        "apartment",
+        "condo",
+        "other"
+      ]
+    },
+    "own_or_rent": {
+      "type": "string",
+      "title": "Own or Rent",
+      "enum": [
+        "own",
+        "rent"
+      ]
+    },
+    "landlord_allows_pets": {
+      "type": "boolean",
+      "title": "Landlord Allows Pets"
+    },
+    "household_adults": {
+      "type": "string",
+      "title": "Adults in Household"
+    },
+    "household_children": {
+      "type": "string",
+      "title": "Children in Household (ages)"
+    },
+    "current_pets": {
+      "type": "string",
+      "title": "Current Pets"
+    },
+    "previous_pets": {
+      "type": "string",
+      "title": "Previous Pet Experience"
+    },
+    "reason_for_adoption": {
+      "type": "string",
+      "title": "Reason for Adoption"
+    },
+    "hours_alone_per_day": {
+      "type": "string",
+      "title": "Hours Dog Would Be Alone Per Day"
+    },
+    "emergency_contact": {
+      "type": "string",
+      "title": "Emergency Contact (Name, Phone, Relationship)"
+    },
+    "agreed_to_terms": {
+      "type": "boolean",
+      "title": "Agreed to Terms"
+    },
+    "status": {
+      "type": "string",
+      "title": "Status",
+      "enum": [
+        "pending",
+        "approved",
+        "rejected"
+      ],
+      "default": "pending"
+    }
+  },
+  "required": [
+    "animal_id",
+    "first_name",
+    "last_name",
+    "email",
+    "phone",
+    "street_address",
+    "city",
+    "state",
+    "zip",
+    "housing_type",
+    "own_or_rent",
+    "household_adults",
+    "reason_for_adoption",
+    "agreed_to_terms"
+  ]
+}

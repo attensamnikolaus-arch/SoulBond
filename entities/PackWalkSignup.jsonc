@@ -1,0 +1,52 @@
+{
+  "name": "PackWalkSignup",
+  "type": "object",
+  "properties": {
+    "full_name": {
+      "type": "string",
+      "title": "Full Name"
+    },
+    "email": {
+      "type": "string",
+      "title": "Email"
+    },
+    "phone": {
+      "type": "string",
+      "title": "Phone"
+    },
+    "walk_date": {
+      "type": "string",
+      "title": "Walk Date",
+      "format": "date"
+    },
+    "experience_level": {
+      "type": "string",
+      "title": "Dog Handling Experience",
+      "enum": [
+        "first_time",
+        "some_experience",
+        "experienced"
+      ],
+      "default": "some_experience"
+    },
+    "message": {
+      "type": "string",
+      "title": "Anything we should know?"
+    },
+    "status": {
+      "type": "string",
+      "title": "Status",
+      "enum": [
+        "pending",
+        "confirmed",
+        "cancelled"
+      ],
+      "default": "pending"
+    }
+  },
+  "required": [
+    "full_name",
+    "email",
+    "walk_date"
+  ]
+}

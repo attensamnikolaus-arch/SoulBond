@@ -1,0 +1,35 @@
+{
+  "name": "Donation",
+  "type": "object",
+  "properties": {
+    "donor_email": {
+      "type": "string",
+      "title": "Donor Email"
+    },
+    "donor_name": {
+      "type": "string",
+      "title": "Donor Name"
+    },
+    "amount": {
+      "type": "number",
+      "title": "Amount"
+    },
+    "message": {
+      "type": "string",
+      "title": "Personal Message"
+    },
+    "is_anonymous": {
+      "type": "boolean",
+      "title": "Anonymous",
+      "default": false
+    },
+    "dedication": {
+      "type": "string",
+      "title": "Dedication (In honor/memory of)"
+    }
+  },
+  "required": [
+    "donor_email",
+    "amount"
+  ]
+}

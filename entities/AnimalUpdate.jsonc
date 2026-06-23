@@ -1,0 +1,47 @@
+{
+  "name": "AnimalUpdate",
+  "type": "object",
+  "properties": {
+    "animal_id": {
+      "type": "string",
+      "title": "Animal ID"
+    },
+    "animal_name": {
+      "type": "string",
+      "title": "Animal Name"
+    },
+    "title": {
+      "type": "string",
+      "title": "Update Title"
+    },
+    "content": {
+      "type": "string",
+      "title": "Update Content"
+    },
+    "photo_urls": {
+      "type": "array",
+      "title": "Photos",
+      "items": {
+        "type": "string"
+      }
+    },
+    "update_type": {
+      "type": "string",
+      "title": "Update Type",
+      "enum": [
+        "photo",
+        "video",
+        "milestone",
+        "health",
+        "general"
+      ],
+      "default": "general"
+    }
+  },
+  "required": [
+    "animal_id",
+    "animal_name",
+    "title",
+    "content"
+  ]
+}

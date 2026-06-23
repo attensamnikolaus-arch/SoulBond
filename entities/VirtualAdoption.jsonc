@@ -1,0 +1,57 @@
+{
+  "name": "VirtualAdoption",
+  "type": "object",
+  "properties": {
+    "animal_id": {
+      "type": "string",
+      "title": "Animal ID"
+    },
+    "animal_name": {
+      "type": "string",
+      "title": "Animal Name"
+    },
+    "donor_email": {
+      "type": "string",
+      "title": "Donor Email"
+    },
+    "donor_name": {
+      "type": "string",
+      "title": "Donor Name"
+    },
+    "monthly_amount": {
+      "type": "number",
+      "title": "Monthly Donation Amount"
+    },
+    "update_frequency": {
+      "type": "string",
+      "title": "Update Frequency",
+      "enum": [
+        "weekly",
+        "biweekly",
+        "monthly"
+      ],
+      "default": "weekly"
+    },
+    "status": {
+      "type": "string",
+      "title": "Status",
+      "enum": [
+        "active",
+        "paused",
+        "cancelled"
+      ],
+      "default": "active"
+    },
+    "total_donated": {
+      "type": "number",
+      "title": "Total Donated",
+      "default": 0
+    }
+  },
+  "required": [
+    "animal_id",
+    "animal_name",
+    "donor_email",
+    "monthly_amount"
+  ]
+}

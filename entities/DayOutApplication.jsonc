@@ -1,0 +1,133 @@
+{
+  "name": "DayOutApplication",
+  "type": "object",
+  "properties": {
+    "animal_id": {
+      "type": "string",
+      "title": "Animal ID"
+    },
+    "animal_name": {
+      "type": "string",
+      "title": "Animal Name"
+    },
+    "first_name": {
+      "type": "string",
+      "title": "First Name"
+    },
+    "last_name": {
+      "type": "string",
+      "title": "Last Name"
+    },
+    "co_applicant": {
+      "type": "string",
+      "title": "Spouse / Partner / Roommate on Record"
+    },
+    "street_address": {
+      "type": "string",
+      "title": "Street Address"
+    },
+    "city": {
+      "type": "string",
+      "title": "City"
+    },
+    "state": {
+      "type": "string",
+      "title": "State"
+    },
+    "zip": {
+      "type": "string",
+      "title": "Zip / Postal Code"
+    },
+    "primary_phone": {
+      "type": "string",
+      "title": "Primary Phone"
+    },
+    "secondary_phone": {
+      "type": "string",
+      "title": "Secondary Phone"
+    },
+    "date_of_birth": {
+      "type": "string",
+      "title": "Date of Birth",
+      "format": "date"
+    },
+    "preferred_date": {
+      "type": "string",
+      "title": "Preferred Day Out Date",
+      "format": "date"
+    },
+    "household_members": {
+      "type": "string",
+      "title": "Household Members & Ages"
+    },
+    "pets_in_household": {
+      "type": "string",
+      "title": "All Pets in Household"
+    },
+    "pets_vaccinated": {
+      "type": "string",
+      "title": "Vaccination & Sterilisation Status"
+    },
+    "planned_activities": {
+      "type": "string",
+      "title": "Planned Activities & Places to Visit"
+    },
+    "dog_housing": {
+      "type": "string",
+      "title": "Where Will the Dog Be Housed?"
+    },
+    "can_administer_medication": {
+      "type": "boolean",
+      "title": "Willing to Administer Medication if Needed"
+    },
+    "has_transport": {
+      "type": "boolean",
+      "title": "Has Own Reliable Transportation"
+    },
+    "comfortable_high_energy": {
+      "type": "boolean",
+      "title": "Comfortable with High-Energy Dogs"
+    },
+    "energy_preference": {
+      "type": "string",
+      "title": "Energy Level Preference (if not high energy)"
+    },
+    "emergency_contact": {
+      "type": "string",
+      "title": "Emergency Contact (Name, Phone, Relationship)"
+    },
+    "agreed_to_terms": {
+      "type": "boolean",
+      "title": "Agreed to Terms & Liability Waiver"
+    },
+    "status": {
+      "type": "string",
+      "title": "Application Status",
+      "enum": [
+        "pending",
+        "approved",
+        "rejected"
+      ],
+      "default": "pending"
+    }
+  },
+  "required": [
+    "animal_id",
+    "first_name",
+    "last_name",
+    "street_address",
+    "city",
+    "state",
+    "zip",
+    "primary_phone",
+    "date_of_birth",
+    "preferred_date",
+    "household_members",
+    "pets_in_household",
+    "pets_vaccinated",
+    "planned_activities",
+    "dog_housing",
+    "emergency_contact",
+    "agreed_to_terms"
+  ]
+}

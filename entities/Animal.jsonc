@@ -1,0 +1,129 @@
+{
+  "name": "Animal",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "title": "Name"
+    },
+    "species": {
+      "type": "string",
+      "title": "Species",
+      "enum": [
+        "Dog",
+        "Cat",
+        "Rabbit",
+        "Bird",
+        "Other"
+      ]
+    },
+    "breed": {
+      "type": "string",
+      "title": "Breed"
+    },
+    "age": {
+      "type": "string",
+      "title": "Age"
+    },
+    "gender": {
+      "type": "string",
+      "title": "Gender",
+      "enum": [
+        "Male",
+        "Female"
+      ]
+    },
+    "location": {
+      "type": "string",
+      "title": "Shelter Location"
+    },
+    "trait": {
+      "type": "string",
+      "title": "Special Trait"
+    },
+    "bio": {
+      "type": "string",
+      "title": "Biography"
+    },
+    "rescue_story": {
+      "type": "string",
+      "title": "Rescue Story"
+    },
+    "rescue_date": {
+      "type": "string",
+      "title": "Rescue Date",
+      "format": "date"
+    },
+    "keeper_note": {
+      "type": "string",
+      "title": "Keeper's Note"
+    },
+    "keeper_name": {
+      "type": "string",
+      "title": "Keeper's Name"
+    },
+    "milestones": {
+      "type": "array",
+      "title": "Journey Milestones",
+      "items": {
+        "type": "object",
+        "properties": {
+          "label": {
+            "type": "string"
+          },
+          "date": {
+            "type": "string"
+          },
+          "completed": {
+            "type": "boolean"
+          }
+        }
+      }
+    },
+    "photo_url": {
+      "type": "string",
+      "title": "Main Photo URL"
+    },
+    "gallery_urls": {
+      "type": "array",
+      "title": "Gallery Photos",
+      "items": {
+        "type": "string"
+      }
+    },
+    "adoption_status": {
+      "type": "string",
+      "title": "Adoption Status",
+      "enum": [
+        "available",
+        "virtually_adopted",
+        "physically_adopted"
+      ],
+      "default": "available"
+    },
+    "virtual_adopters_count": {
+      "type": "number",
+      "title": "Virtual Adopters Count",
+      "default": 0
+    },
+    "weight": {
+      "type": "string",
+      "title": "Weight"
+    },
+    "personality_tags": {
+      "type": "array",
+      "title": "Personality Tags",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "name",
+    "species",
+    "age",
+    "gender",
+    "location",
+    "trait"
+  ]
+}
