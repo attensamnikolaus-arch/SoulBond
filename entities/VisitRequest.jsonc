@@ -1,0 +1,60 @@
+{
+  "name": "VisitRequest",
+  "type": "object",
+  "properties": {
+    "animal_id": {
+      "type": "string",
+      "title": "Animal ID"
+    },
+    "animal_name": {
+      "type": "string",
+      "title": "Animal Name"
+    },
+    "visitor_email": {
+      "type": "string",
+      "title": "Visitor Email"
+    },
+    "visitor_name": {
+      "type": "string",
+      "title": "Visitor Name"
+    },
+    "preferred_date": {
+      "type": "string",
+      "title": "Preferred Date",
+      "format": "date"
+    },
+    "visit_type": {
+      "type": "string",
+      "title": "Visit Type",
+      "enum": [
+        "meet_and_greet",
+        "day_out",
+        "physical_adoption_inquiry"
+      ],
+      "default": "meet_and_greet"
+    },
+    "message": {
+      "type": "string",
+      "title": "Message"
+    },
+    "status": {
+      "type": "string",
+      "title": "Status",
+      "enum": [
+        "pending",
+        "approved",
+        "completed",
+        "cancelled"
+      ],
+      "default": "pending"
+    }
+  },
+  "required": [
+    "animal_id",
+    "animal_name",
+    "visitor_email",
+    "visitor_name",
+    "preferred_date",
+    "visit_type"
+  ]
+}
